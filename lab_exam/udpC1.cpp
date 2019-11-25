@@ -21,7 +21,7 @@ int main(){
       //memset(servaddr, '\0', sizeof(servaddr));
       servaddr.sin_family = AF_INET;
       servaddr.sin_port = htons(12345);
-      servaddr.sin_addr.s_addr = INADDR_ANY;
+      //servaddr.sin_addr.s_addr = INADDR_ANY;
 
       int len = sendto(sockfd, (const char *)hello, strlen(hello), 0, (const struct sockaddr *)&servaddr, sizeof(servaddr));
       if(len == -1){
