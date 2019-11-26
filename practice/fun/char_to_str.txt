@@ -1,0 +1,12 @@
+Converting a char* to a std::string:
+
+char* c = "Hello, world";
+std::string s(c);
+Converting a std::string to a char*:
+
+std::string s = "Hello, world";
+char* c = new char[s.length() + 1];
+strcpy(c, s.c_str());
+
+// and then later on, when you are done with the `char*`:
+delete[] c;

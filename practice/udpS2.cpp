@@ -31,6 +31,8 @@ int main(){
       client.sin_family =  AF_INET;
       client.sin_port = htons(6000);
       client.sin_addr.s_addr= inet_addr("127.0.0.1");
+
+      
       for (int i=0; i < MSGS; i++) {
       char str[80];
       cout<<"Enter the string to send to the client: ";
