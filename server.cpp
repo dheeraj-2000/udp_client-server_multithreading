@@ -1,3 +1,10 @@
+/***************************************************************************************************************************
+  Author: Dheeraj Chaudhary
+  Udp server for interacting with different client at a time using socket programming
+  
+  Here I'll receive a file name from the client and check whether it is present on the present directory or not
+***************************************************************************************************************************/
+
 #include<bits/stdc++.h>
 #include <iostream>
 #include <sys/socket.h>
