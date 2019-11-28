@@ -50,7 +50,7 @@ int main(int argc, char **argv){
 		myaddr.sin_addr.s_addr = htonl(INADDR_ANY);
 		myaddr.sin_port = htons(2052);
 
-  	if (bind(fd, (sockaddr*) &myaddr, sizeof (myaddr)) < 0) { 
+  	if (bind(fd, (sockaddr*) &myaddr, sizeof (myaddr)) < 0) {                   //Binding to create the socket
       	std::cout << "\n\t Bind failed...\n\t Exiting..." << '\n';
       	return 0;
       }
