@@ -1,3 +1,12 @@
+
+/***************************************************************************************************************************
+  Author: Dheeraj Chaudhary
+  Udp client for interacting with multithreaded server using socket programming
+  
+  Here I'm taking a filename as input which will be send to the server to check whether it's present on server or not
+***************************************************************************************************************************/
+
+
 #include <iostream>
 #include <sys/socket.h>
 #include <cstring>
@@ -19,6 +28,7 @@
          return 0;
      }
 
+  
      std::cout << "\n\t Socket created..." << '\n';
 
      memset ((char*)&myaddr, 0, sizeof (myaddr));
