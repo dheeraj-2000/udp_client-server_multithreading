@@ -32,13 +32,10 @@ int main(int argc, char **argv){
 		struct sockaddr_in myaddr;	/* my address */
 		struct sockaddr_in remaddr;	/* remote address */
 		socklen_t addrlen = sizeof(remaddr);		/* length of addresses */
-		int recvlen;			/* number of bytes received */
-		int fd;				/* our socket */
-		int msgcnt = 0;			/* count # of messages we received */
-		 char buf[BUFSIZE];	/* receive buffer */
+		int recvlen, fd, msgcnt = 0;			/* number of bytes received , socket descriptor , count # of messages we received  */
+		char buf[BUFSIZE];	/* receive buffer */
   	pthread_t thread[50];
-
-
+	
 		/* create a UDP socket */
 
 		if ((fd = socket (AF_INET, SOCK_DGRAM, 0)) ==-1 ) {
