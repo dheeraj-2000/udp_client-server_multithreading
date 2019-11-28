@@ -38,7 +38,7 @@ int main(int argc, char **argv){
 	
 		/* create a UDP socket */
 
-		if ((fd = socket (AF_INET, SOCK_DGRAM, 0)) ==-1 ) {
+		if ((fd = socket (AF_INET, SOCK_DGRAM, 0)) ==-1 ) {                         //Creating Socket
 	 		 std::cout << "\n\t Socket creation failed...\n\t Exiting..." << '\n';
 	 		 return 0;
 	  }
@@ -50,7 +50,7 @@ int main(int argc, char **argv){
 		myaddr.sin_addr.s_addr = htonl(INADDR_ANY);
 		myaddr.sin_port = htons(2052);
 
-  	if (bind(fd, (sockaddr*) &myaddr, sizeof (myaddr)) < 0) {
+  	if (bind(fd, (sockaddr*) &myaddr, sizeof (myaddr)) < 0) { 
       	std::cout << "\n\t Bind failed...\n\t Exiting..." << '\n';
       	return 0;
       }
