@@ -21,7 +21,7 @@ using namespace std;
 void* search_file (void*);
 #define BUFSIZE 2048
 
-struct req {
+struct req {                              //Structure to get various parameter from client for each client
 	int des;
 	char str[2048];
 	socklen_t addlen;
