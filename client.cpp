@@ -23,7 +23,7 @@
      int rcvlen;
      char *server = "127.0.0.1";
 
-     if ((fd = socket (AF_INET, SOCK_DGRAM, 0)) == -1 ) {
+     if ((fd = socket (AF_INET, SOCK_DGRAM, 0)) == -1 ) {                            //creating socket
          std::cout << "\n\t Socket creation failed...\n\t Exiting..." << '\n';
          return 0;
      }
